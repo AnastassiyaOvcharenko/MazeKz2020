@@ -1,0 +1,20 @@
+﻿@model List<DanceSchoolViewModel>
+@{
+    ViewData["Title"] = "Ovcharenko";
+}
+
+<h1>Dance School</h1>
+<table style="width:100%">
+    <tr>
+        <th>School Name</th>
+        <th>Address</th>
+    </tr>
+    @foreach (var school in Model)
+    {
+        <tr>
+            <td><a href=@school.SiteUrl>@school.SchoolName</a></td>
+            <td>@school.Address</td>
+        </tr>
+    }
+</table>
+

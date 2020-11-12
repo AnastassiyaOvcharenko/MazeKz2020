@@ -45,5 +45,31 @@ namespace WebMaze.Controllers
 
             return View(models);
         }
+        public IActionResult Ovcharenko()
+        {
+            var danceSchoolModels = new List<DanceSchoolViewModel>()
+            {
+                new DanceSchoolViewModel()
+                {
+                    SchoolName = "ProDance",
+                    Address = "г.Алматы, ул.Маметовой, 67",
+                    SiteUrl = "https://prodance.kz/"
+                },
+                new DanceSchoolViewModel()
+                {
+                    SchoolName = "LaDanza",
+                    Address = "г. Алматы, пр. Достык, 341",
+                    SiteUrl = "https://ladanza.kz/"
+                },
+                new DanceSchoolViewModel()
+                {
+                    SchoolName = "Free Way",
+                    Address = "г. Алматы, ул. Курмангазы 107, угол ул Байтурсынова",
+                    SiteUrl = "http://freedance.kz/"
+                }
+            };
+
+            return View(danceSchoolModels);
+        }
     }
 }
