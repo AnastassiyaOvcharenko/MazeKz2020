@@ -8,4 +8,9 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <ProjectReference Include="..\MazeKz2020\MazeKz2020.csproj" />
+  </ItemGroup>
+
 </Project>
