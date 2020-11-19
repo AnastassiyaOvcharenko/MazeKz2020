@@ -371,6 +371,7 @@ namespace WebMaze.Controllers
             };
 
             return View(danceSchoolModels);
+        }
 
         public IActionResult Yessenturov()
         {
